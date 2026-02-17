@@ -1,54 +1,55 @@
-CardioShield: Multimodal AI for Cardiovascular Risk Intelligence
-Cardiovascular Disease (CVD) remains the leading cause of death globally. CardioShield is an AI-powered platform designed to enhance early detection by bridging the gap between clinical biomarkers and electrophysiological signals.
-+1
+# 🛡️ CardioShield — Multimodal Cardiovascular Intelligence System
 
-🌟 The Innovation
-Unlike standard diagnostic systems that rely on static data, CardioShield utilizes a Multimodal Fusion Engine. It combines:
+> **Predict. Detect. Prevent. — Protecting hearts with AI.**
 
+CardioShield is an AI-powered healthcare platform that integrates **clinical biomarkers** and **ECG electrophysiological signals** into a unified cardiovascular risk intelligence system.
 
-Clinical Risk Modeling: Analyzing age, BP, and cholesterol using Gradient Boosting and LightGBM.
-+1
+Built for the **Byte 2 Beat — Hack4Health Hackathon**, this project demonstrates how multimodal artificial intelligence can enable early detection and explainable risk assessment of cardiovascular disease.
 
+---
 
-ECG Deep Learning: An unsupervised Convolutional Autoencoder that detects anomalies in raw waveforms.
+## ❤️ Inspiration
 
-🛠️ Technical Implementation
-1. Clinical Analytics
+Cardiovascular Disease (CVD) remains the leading cause of death globally. While early detection can prevent many cardiac events, most diagnostic systems rely only on static clinical metrics.
 
-Algorithms: Evaluated Gradient Boosting, XGBoost, and LightGBM.
+We envisioned a smarter system that could combine:
 
+- Patient health records  
+- Lifestyle indicators  
+- Real-time cardiac electrical signals  
 
-Performance: LightGBM delivered the best performance with an accuracy of approximately 74% and a ROC AUC near 0.80.
+This led to the creation of **CardioShield** — a multimodal cardiovascular AI platform.
 
+---
 
-Key Predictors: Systolic blood pressure, cholesterol interaction, and age were identified as dominant predictors.
+## 🧠 Key Features
 
-2. ECG Intelligence
+### 🩺 Clinical Risk Prediction
+- Machine learning cardiovascular risk model  
+- Based on patient biomarkers  
+- LightGBM ensemble modeling  
 
-Architecture: Convolutional Autoencoder designed for unsupervised anomaly detection.
+### 🫀 ECG Intelligence
+- Deep learning autoencoder  
+- Detects electrophysiological anomalies  
+- Reconstruction error scoring  
 
+### 🧩 Multimodal Fusion
+- Combines clinical + ECG intelligence  
+- Generates unified **CardioShield Risk Index**  
 
-Method: ECG signals were normalized, segmented, and reconstructed through the neural network.
+### 🔬 Explainable AI
+- SHAP biomarker attribution  
+- ECG anomaly heatmaps  
+- Signal reconstruction overlays  
 
+### 🖥️ Interactive Dashboard
+- Built with Streamlit  
+- Real-time patient risk assessment  
+- ECG CSV upload  
+- Fusion visualization  
 
-Metric: Reconstruction Error (MSE) was used to quantify electrophysiological abnormalities.
+---
 
-3. Explainability & Visualization
+## 🏗️ System Architecture
 
-Interpretability: Integrated SHAP-based feature attribution for clinical predictions.
-
-
-Visualization: Heatmap visualizations and signal reconstruction overlays highlight abnormal waveform regions to improve clinical transparency.
-
-🚀 Deployment
-The system is deployed via a Streamlit dashboard, simulating a real-world clinical environment.
-
-
-Functionality: Supports patient data input, ECG upload, risk scoring, and fusion intelligence reporting.
-
-📈 Future Roadmap
-Real-time ECG streaming and multi-lead signal modeling.
-
-Integration with Electronic Health Records (EHR) and large-scale hospital deployment.
-
-Developed for the Byte 2 Beat Hackathon.
